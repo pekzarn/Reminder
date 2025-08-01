@@ -1,0 +1,17 @@
+{
+  "name": "reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd server && npx nodemon run dev",
+  "client": "cd client/Reminder && npm run dev"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
