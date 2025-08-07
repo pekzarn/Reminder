@@ -3,6 +3,7 @@ import Landing from "./pages/Landing";
 import Login from "./pages/login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import RemindersPage from "./pages/RemindersPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 
@@ -45,6 +46,16 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Reminders page - main functionality */}
+        <Route
+          path="/reminders"
+          element={
+            <ProtectedRoute>
+              <RemindersPage />
             </ProtectedRoute>
           }
         />
